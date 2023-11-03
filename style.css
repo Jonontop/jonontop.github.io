@@ -1,0 +1,31 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+#nameInput{
+    margin-top: 10vw;
+    
+}
+
+#submit{
+    margin-top: 3.5vw;
+    font-size: 4vw;
+    background-color: white;
+    border: none;
+    transition: all 0.5s ease;
+    margin-bottom: 10vw;
+}
+
+#submit:hover{
+    color: blue;
+}
+
+#txt{
+    margin-top: 15vw;
+}
+
+.output{
+    margin-top: 3vw;
+}
