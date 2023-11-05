@@ -1,10 +1,215 @@
-#school a{
-    text-decoration: none;
-    color: black;
-    transition: all 1s ease;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    
 }
 
-#school a:hover{
-    color: grey;
+body{
+    background-color: rgb(36, 40, 44);
+}
+
+/* Main nav */
+.nav ul{
+    word-spacing: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.nav ul li{
+    display: inline;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    color: white;
+    transition: all 1s;
+    text-decoration: underline rgb(36, 40, 44);
+}
+
+/* PC nav*/
+
+.nav .PC ul li a:hover{
+    text-decoration: underline #FC6D6D;
+}
+
+/* Mobile nav*/
+
+.nav .Mobile {
+    display: none;
+}
+
+/* Main */
+
+.Main{
+    color: white;
+}
+
+.Main h1{
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 40px;
+}
+
+.Main h1 a{
+    color: #FC6D6D;
     text-decoration: underline;
+}
+
+.Main .button{
+    font-size: 1.4vw;
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.Main .button:hover{
+    font-size: 1.7vw;
+    color: #FC6D6D;
+    border-color: #FC6D6D;
+}
+
+.Main .social-media{
+    position: absolute;
+    margin-left: 35vw;
+}
+
+.Main .CV {
+    position: absolute;
+    margin-left: 57vw;
+}
+
+.summary{
+    margin-top: 100px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.summary p a{
+    color: #FC6D6D;
+    
+}
+
+
+/* Main dynamic text */
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+  }
+  .wrapper .static-txt{
+    color: #fff;
+    font-size: 3vw;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 3vw;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 10px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(36, 40, 44);
+    margin: 2.5vw;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+
+/* Experinece */
+
+.exp{
+    margin-top: 100px;
+    
+}
+
+.exp h2{
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.flex-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+}
+
+.flex-box{
+    width: 200px;
+    height: 150px;
+    background-color: rgb(61, 61, 61) !important;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    transition: color 0.5s;
+    transition: all 1s;
+}
+
+.flex-box:hover{
+    background-color: #fa6161 !important;
+    color: rgb(233, 227, 227);
+    width: 210px;
+    height: 160px;
+    cursor: pointer;
+}
+
+/* Projects */
+
+.projects{
+    margin-top: 450px;
+}
+
+.projects h1{
+    color: white;
+    text-align: center;
+    
 }
