@@ -3,19 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello, I am Jon</h1>
-    <p>this is temporary website</p>
-    <p id="school">middle school in Slovenia: <a href="https://www.vegova.si/">Vegova</a></p>
-    <div class="contact">
-        <ul>
-            <li>Discord: ninjacof</li>
-            <li>Tel.: +386 70 434 911</li>
-            <li>Mail: jon.pecar@gmail.com</li>
-        </ul>
+
+<!-- Nav bar -->
+    <div class="nav">
+        <nav class="PC">
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Main">About</a></li>
+                <li><a href="#exp">Experience</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="">Language</a></li>
+            </ul>
+        </nav>
+        <nav class="Mobile">
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Main">About</a></li>
+                <li><a href="#exp">Experience</a></li>
+                <li><a href="#cv">CV</a></li>
+            </ul>
+        </nav>
     </div>
+<!-- Main -->
+    <div class="Main" id="Main">
+        <h1>Hi, I am <a>Jon</a>.</h1>
+        <div class="wrapper">
+            <div class="static-txt">I'm a</div>
+            <ul class="dynamic-txts">
+              <li><span>3D modeler</span></li>
+              <li><span>Server Administrator</span></li>
+              <li><span>Developer</span></li>
+              <li><span>Student</span></li>
+            </ul>
+        </div>
+        <br>
+        <a href="" class="social-media button">Social Media</a>
+        <a href="Življenjepis .pdf" class="CV button">My CV</a>
+
+        <div class="summary">
+            <h3></h3>
+            <p>I'm <a>Jon Pečar Anželak</a>, an individual driven by passion and curiosity. My educational journey led me to <a>Vegova</a>, where I honed my skills and embraced the spirit of learning. Beyond academics, I find joy in the physical and mental challenges of boxing, emphasizing my dedication to fitness and discipline. In the vast realm of technology, I thrive in the realms of <a>3D modeling</a> and <a>programming</a>, expressing my creativity and technical prowess. My expertise spans languages like <a>HTML</a>, <a>CSS</a>, and <a>Python</a>, enabling me to craft compelling <a>websites</a> and <a>applications</a>. I'm a well-rounded individual, seamlessly blending my love for sports and technology in my pursuits.</p>
+        </div>
+    </div>
+
+<!-- Experience -->
+
+    <div class="exp" id="exp">
+        <h2>Experiences</h2>
+
+        <div class="flex-container">
+
+            <div class="flex-box">
+                <p>Programing</p>
+                
+            </div>
+
+            <div class="flex-box">
+                <p>3D modeling</p>
+            </div>
+
+            <div class="flex-box">
+                <p>Software</p>
+            </div>
+
+            <div class="flex-box">
+                <p>OS</p>
+            </div>
+
+            <div class="flex-box">
+                <p>Servers</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+<!-- Projects -->
+
+    <div class="projects">
+        <h1>Main projects</h1>
+
+    </div>
+
+<!-- CV 
+
+    <div class="cv" id="cv">
+        <h2>MY CV:</h2>
+        <embed src="Življenjepis .pdf" width="40%" height="400px" />
+    </div>
+
+-->
+
+<!-- Contanct -->
+    <div class="contact" id="contact">
+        <h1>Contact me!</h1>
+
+        <label for="name">First name:</label>
+        <input type="text" name="name" id="name">
+        <label for="sname" name="sname" id="sname">Last name:</label>
+        <input type="text">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for=""></label>
+        <input type="text">
+        <input type="submit" value="Submit">
+    </div>
+
 </body>
 </html>
