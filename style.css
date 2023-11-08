@@ -302,4 +302,98 @@ footer h1{
 }
 
 
+@media only screen and (max-width: 600px){
+
+    .PC{
+        display: none;
+    }
+
+    .Mobile{
+        display: inline;
+    }
+
+    .Main h1{
+        font-size: 3em;
+    }
+
+    .Main .button{
+        font-size: 1.5em;
+    }
+
+    .Main .social-media{
+        margin-left: 20vw;
+    }
+
+    .Main .CV {
+        margin-left: 40vw;
+    }
+
+    .summary{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .dynamic-txts{
+        margin-left: 0em;
+    }
+
+    .exp h2{
+        font-size: 2em;
+    }
+
+    .flex-box{
+        width: 100%;
+        height: 150px;
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+
+    .contact {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 5vw;
+      }
+
+      .contact input[type="text"],
+      .contact input[type="email"] {
+        width: calc(100% - 20px);
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .contact input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #FC6D6D;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 45px;
+      }
+
+      .contact input[type="submit"]:hover {
+        background-color: #f35050;
+      }
+
+      footer h1{
+        font-size: 1.5em;
+        color: #FC6D6D;
+    }
+
+    .div1{
+        position: absolute;
+        padding-top: 5vw;
+        margin-left: 5
+    }
+
 
