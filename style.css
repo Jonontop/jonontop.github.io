@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
-    
+}
+
+meta[name="description"] {
+            max-width: 1000px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: inline-block;
 }
 
 body{
