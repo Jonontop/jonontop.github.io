@@ -9,7 +9,7 @@
     <meta property="og:image" content="URL_TO_PROFILE_PICTURE">
     <meta property="og:description" content="Welcome to Jon Pečar Anželak's Facebook profile. Stay updated with Jon's activities, interests, and more.">
     <meta property="og:site_name" content="Facebook">
-    
+    <script type="module" src="script.js"></script>
     <title>Jon Pečar Anželak</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,14 +21,23 @@
 
     <!-- Lang -->
      <link rel="alternate" hreflang="sl" href="sl.jonpecar.me" />
+     <link rel="alternate" hreflang="en" href="jonpecar.me" />
     
     <!--  links -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
         <!-- Swiper (slide creator)-->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
         <!-- TypeIt -->
-        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+        <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     
     <!-- Google font and analytics  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +49,7 @@
 
     gtag('config', 'G-DT0Y9BCPLQ');
     </script>
+    <script src="/path/to/typeit/source"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
@@ -67,16 +77,17 @@
     </div>
 <!-- Main -->
     <div class="Main" id="Main">
-        <h1>Hi, I am <a>Jon Pečar Anželak</a>.</h1>
-        <div class="wrapper">
-            <div class="static-txt">I'm a</div>
-            <ul class="dynamic-txts">
-              <li><span>3D modeler</span></li>
-              <li><span>Server Administrator</span></li>
-              <li><span>Developer</span></li>
-              <li><span>Student</span></li>
-            </ul>
+        <span class="mainspan1">I am, <span id="type-it" class="mainspan2"></span></span>
+        <br><br><br>
+        <a href="" class="social-media button">Social Media</a>
+        <a href="Življenjepis .pdf" class="CV button">My CV</a>
+        <br>
+
+        <div class="summary">
+            <h3></h3>
+            <p>I'm <a>Jon Pečar Anželak</a>, an individual driven by passion and curiosity. My educational journey led me to <a>Vegova</a>, where I honed my skills and embraced the spirit of learning. Beyond academics, I find joy in the physical and mental challenges of boxing, emphasizing my dedication to fitness and discipline. In the vast realm of technology, I thrive in the realms of <a>3D modeling</a> and <a>programming</a>, expressing my creativity and technical prowess. My expertise spans languages like <a>HTML</a>, <a>CSS</a>, and <a>Python</a>, enabling me to craft compelling <a>websites</a> and <a>applications</a>. I'm a well-rounded individual, seamlessly blending my love for sports and technology in my pursuits.</p>
         </div>
+    </div>
         <br>
         <a href="" class="social-media button">Social Media</a>
         <a href="Življenjepis .pdf" class="CV button">My CV</a>
