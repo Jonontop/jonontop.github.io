@@ -188,6 +188,20 @@ body{
     
 }
 
+.projects ul li{
+    text-align: center
+}
+
+.projects ul li a{
+    color: white;
+    font-size: 1.5em
+    text-decoration: none;
+    transition: all ease 1s;
+
+.projects ul li a:hover{
+    color: rgb(36, 40, 44)
+}
+
 /* Contact */
 
 .contact {
