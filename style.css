@@ -199,7 +199,7 @@ body{
     transition: all ease 1s;
 
 .projects ul li a:hover{
-    color: rgb(36, 40, 44)
+    color: rgb(36, 40, 44);
 }
 
 /* Contact */
