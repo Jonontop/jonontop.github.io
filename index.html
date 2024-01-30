@@ -38,7 +38,7 @@
         <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
 
         <!-- FontAwesome -->
-        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/691efd176d.js" crossorigin="anonymous"></script>
 
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -70,15 +70,23 @@
                 <li><a href="" id="lang">Language</a></li>
             </ul>
         </nav>
-        <nav class="Mobile">
-            <ul>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#Main">About</a></li>
-                <li><a href="#exp">Experience</a></li>
+        <nav class="Mobile" >
+            <i class="fa-solid fa-bars fa-lg icon" id="icon" style="color: white; padding-bottom: 10px;" onclick="menu()"></i>
+            <ul id="items">
+                <li id="item"><a href="#contact">Contact</a></li>
+                <li id="item"><a href="#Main">About</a></li>
+                <li id="item"><a href="#exp">Experience</a></li>
                 <!--<li><a href="#cv">CV</a></li>-->
+                <li id="item"><a href="" id="lang">Language</a></li>
             </ul>
         </nav>
     </div>
+
+    <script>
+        function menu(){
+            document.getElementById("items").style.display = "grid"
+        }
+    </script>
 <!-- Main -->
     <div class="Main" id="Main">
         <div style="align-content:center; display:grid;">
@@ -91,6 +99,7 @@
 
         <div class="summary">
             <h3></h3>
+            
             <p>I'm <a>Jon Pečar Anželak</a>, an individual driven by passion and curiosity. My educational journey led me to <a>Vegova</a>, where I honed my skills and embraced the spirit of learning. Beyond academics, I find joy in the physical and mental challenges of boxing, emphasizing my dedication to fitness and discipline. In the vast realm of technology, I thrive in the realms of <a>3D modeling</a> and <a>programming</a>, expressing my creativity and technical prowess. My expertise spans languages like <a>HTML</a>, <a>CSS</a>, and <a>Python</a>, enabling me to craft compelling <a>websites</a> and <a>applications</a>. I'm a well-rounded individual, seamlessly blending my love for sports and technology in my pursuits.</p>
         </div>
     </div>
