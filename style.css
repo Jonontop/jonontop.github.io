@@ -144,14 +144,13 @@ body{
 }
 
 .flex-container{
-    width: 70%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: 15%;
-    margin-right: 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    justify-items: center;
+    text-align: center;
+    
+    
 }
 
 .flex-box{
@@ -310,19 +309,41 @@ footer h1{
     color: #fa6161;
 }
 
-@media only screen and (max-width: 600px){
-
-    .PC{
-        display: none;
+@media only screen and (max-width: 1200px) {
+    .flex-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 
-    .Mobile{
-        display: inline;
+    .flex-box{
+        width: 318px;
+        height: 200px;
+        line-height: 200px;
+        font-size: 2.5vw;
     }
+    
 }
 
+@media only screen and (max-width: 800px) {
+    .flex-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
 
-@media only screen and (max-width: 600px){
+    .flex-box{
+        width: 75%;
+        font-size: 4vw;
+    }
+
+    .summary{
+        font-size: 1em;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .summary::after {
+        content: '😊'
+    }
 
     .PC{
         display: none;
@@ -331,6 +352,36 @@ footer h1{
     .Mobile{
         display: inline;
     }
+
+    .nav .Mobile{
+        display: inline;
+        background-color: #3b4248;
+    }
+
+    .nav .Mobile ul{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        background-color: #3b4248;
+    }
+
+    .nav ul{
+        margin-top: 0;
+    }
+
+    .icon{
+        float: right;
+        margin-right: 25px;
+    }
+
+
+    
+}
+
+@media only screen and (max-width: 600px){
 
     .Main h1{
         font-size: 3em;
@@ -351,6 +402,7 @@ footer h1{
     .summary{
         margin-left: 5vw;
         margin-right: 5vw;
+        font-size: 1em;
     }
 
     .dynamic-txts{
@@ -358,18 +410,19 @@ footer h1{
     }
 
     .exp h2{
-        font-size: 2em;
+        font-size: 2.5em;
+        margin-bottom: 2em;
     }
 
     .flex-box{
-        width: 100%;
-        height: 150px;
+        width: 95%;
+        font-size: 5vw;
         margin-left: 0vw;
         margin-right: 0vw;
     }
 
     .contact {
-        max-width: 100%;
+        max-width: 85%;
         margin: 0 auto;
         padding: 20px;
         border: 1px solid #ccc;
