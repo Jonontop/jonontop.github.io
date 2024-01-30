@@ -50,8 +50,33 @@ body{
 
 /* Mobile nav*/
 
-.nav .Mobile {
+.nav .Mobile{
+    background-color: #3b4248;
+}
+
+#items{
+    text-align: center;
     display: none;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #3b4248;
+}
+
+.nav ul{
+    margin-top: 0;
+}
+
+.icon{
+    float: right;
+    margin-right: 25px;
+}
+
+#icon{
+    position: absolute;
+    margin-left: 92%;
+    margin-top: 25px;
 }
 
 /* Main */
@@ -376,6 +401,7 @@ footer h1{
         float: right;
         margin-right: 25px;
     }
+
 
 
     
