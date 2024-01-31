@@ -1,9 +1,37 @@
+@keyframes transition1 {
+    0%{
+        opacity: 0;
+    }
+
+
+    15%{
+        opacity: 0.02;
+    }
+
+    23%{
+        opacity: .5;
+    }
+
+    26%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
     scroll-behavior: smooth;
 }
+
 
 meta[name="description"] {
             max-width: 1000px;
@@ -77,6 +105,7 @@ body{
     position: absolute;
     margin-left: 92%;
     margin-top: 25px;
+    display: none;
 }
 
 /* Main */
@@ -213,17 +242,65 @@ body{
 }
 
 .projects ul li{
-    text-align: center;
+    list-style-type: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #fa6161;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    height: 30%;
+    background-color: #fa6161;
+    transition: all ease .5s;
+    
 }
+
+.projects ul li:hover{
+    width: 80%;
+    height: 45%;
+    
+}
+
+#ww p{
+    margin-top: -3.5vw;
+    margin-left: 22vw;
+}
+
 
 .projects ul li a{
     color: white;
     font-size: 1.5em;
     text-decoration: none;
-    transition: all ease 1s;
+    transition: all ease .3s;
 }
-.projects ul li a:hover{
-    color: rgb(36, 40, 44);
+
+.projects ul{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    justify-content: center;
+    width: 25%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 10%;
+    border: 1px solid black;
+    width: 75%;
+}
+
+.projects ul li p{
+    position: absolute;
+    width: 40%;
+    text-align: center;
+    margin-top: -6vw;
+    color: white;
+    margin-left: 20vw;
+    opacity: 0;
+    transition: all ease-in 3s;
+    transition: all cubic-bezier(0,0,1,.75) .1s;
+}
+
+.projects ul li:hover > p{
+    animation: transition1 2s;
+    opacity: 1;
 }
 
 /* Contact */
@@ -345,6 +422,11 @@ footer h1{
         height: 200px;
         line-height: 200px;
         font-size: 2.5vw;
+    }
+
+    .summary{
+        margin-left: 10%;
+        margin-right: 10%;
     }
     
 }
