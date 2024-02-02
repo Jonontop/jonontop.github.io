@@ -290,7 +290,7 @@ body {
 
 .projects ul li:hover>p {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 /* Contact */
