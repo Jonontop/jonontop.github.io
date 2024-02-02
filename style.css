@@ -403,6 +403,11 @@ footer h1 {
     color: #fa6161;
 }
 
+.projects ul li:hover > p{
+    animation: none;
+    opacity: 0;
+}
+
 @media only screen and (max-width: 1200px) {
     .flex-container {
         grid-template-columns: repeat(2, 1fr);
