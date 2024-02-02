@@ -290,7 +290,7 @@ body {
 
 .projects ul li:hover>p {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 /* Contact */
@@ -401,11 +401,6 @@ footer h1 {
 
 .div-item:hover {
     color: #fa6161;
-}
-
-.projects ul li:hover > p{
-    animation: none;
-    opacity: 0;
 }
 
 @media only screen and (max-width: 1200px) {
