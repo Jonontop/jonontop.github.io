@@ -251,6 +251,8 @@ body {
     padding: 20px;
     margin: 20px;
     background-color: #585c5f;
+    border: 1px solid #585c5f;
+    border-radius: 10px
 }
 
 .projects ul li {
