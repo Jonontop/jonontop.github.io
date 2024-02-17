@@ -617,14 +617,27 @@ footer h1 {
         margin-left: 5
     }
 
+    .projects ul{
+        margin: 0;
+        margin-top: 40px;
+    }
+
+
+    .projects ul li:hover{
+        width: 90%;
+        background-color: #fa6161;
+    }
+
     .projects ul li {
         width: 90%;
-        height: fit-content;
+        height:calc(100% + 20px);
         margin: 0 auto;
     }
 
     .projects ul li p {
         display: flex;
         flex-wrap: nowrap;
+        font-size: .8em;
+        width: 50%;
     }
 }
