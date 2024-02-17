@@ -11,8 +11,8 @@
 		<meta property="og:image" content="URL_TO_PROFILE_PICTURE" />
 		<meta
 			property="og:description"
-			content="Welcome to Jon Pečar Anželak's Facebook profile. Stay updated with Jon's activities, interests, and more." />
-		<meta property="og:site_name" content="Facebook" />
+			content="Welcome to Jon Pečar Anželak's website. Stay updated with Jon's activities, interests, and more." />
+		<meta property="og:site_name" content="Website" />
 		<script type="module" src="script.js"></script>
 		<title>Jon Pečar Anželak</title>
 		<meta charset="UTF-8" />
@@ -28,7 +28,7 @@
 			content="Welcome to Jon Pečar Anželak's personal website. Explore my diverse skills as a 3D modeler, server administrator, developer, and dedicated student. Discover my passion for technology, creativity, and fitness. Contact me to collaborate on exciting projects or learn more about my experiences." />
 
 		<!-- Lang -->
-		<link rel="alternate" hreflang="sl" href="jonpecar.me/index-slo.html" />
+		<link rel="alternate" hreflang="sl" href="sl.jonpecar.me" />
 		<link rel="alternate" hreflang="en" href="jonpecar.me" />
 
 		<!--  links -->
@@ -47,7 +47,7 @@
 
 		<!-- FontAwesome -->
 		<script
-			src="https://kit.fontawesome.com/yourcode.js"
+			src="https://kit.fontawesome.com/691efd176d.js"
 			crossorigin="anonymous"></script>
 
 		<!-- JQuery -->
@@ -70,7 +70,6 @@
 
 			gtag("config", "G-DT0Y9BCPLQ");
 		</script>
-		<script src="/path/to/typeit/source"></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
@@ -89,24 +88,55 @@
 				</ul>
 			</nav>
 			<nav class="Mobile">
-				<ul>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#Main">About</a></li>
-					<li><a href="#exp">Experience</a></li>
+				<i
+					class="fa-solid fa-bars fa-xl icon"
+					id="icon"
+					style="color: white; padding-bottom: 10px"
+					onclick="menu()"></i>
+					
+				<ul id="items">
+					<i 
+						class="fa-solid fa-bars-staggered items-icon"
+						id="items-icon"
+						onclick="menu()"
+						
+						></i>
+					<li id="item"><a href="#contact">Contact</a></li>
+					<li id="item"><a href="#Main">About</a></li>
+					<li id="item"><a href="#exp">Experience</a></li>
 					<!--<li><a href="#cv">CV</a></li>-->
+					<li id="item"><a href="" id="lang">Language</a></li>
 				</ul>
 			</nav>
 		</div>
+
+		<script>
+			function menu() {
+				var item = document.getElementById("items");
+
+				if (item.style.display === "" || item.style.display === "none") {
+					item.style.display = "grid";
+					item.classList.add("slide1");
+					item.classList.remove("slide2");
+				} else {
+					item.classList.remove("slide1");
+					item.classList.add("slide2");
+					setTimeout(function () {
+						item.style.display = "none";
+					}, 375);
+				}
+			}
+		</script>
 		<!-- Main -->
 		<div class="Main" id="Main">
-			<div style="align-content: center; display: grid">
+			<div style="align-content: center; display: grid" id="Dyntext">
 				<span class="mainspan1" style="text-align: center"
 					>I am, <span id="type-it" class="mainspan2"></span
 				></span>
 			</div>
 			<br /><br /><br />
-			<a href="" class="social-media button">Social Media</a>
-			<a href="Življenjepis .pdf" class="CV button">My CV</a>
+			<!--<a href="" class="social-media button">Social Media</a>
+        <a href="Življenjepis .pdf" class="CV button">My CV</a>-->
 			<br />
 
 			<div class="summary">
@@ -154,6 +184,10 @@
 				<div class="flex-box">
 					<p>Servers</p>
 				</div>
+
+				<div class="flex-box">
+					<p>Games</p>
+				</div>
 			</div>
 		</div>
 
@@ -161,6 +195,33 @@
 
 		<div class="projects">
 			<h1>Main projects</h1>
+			<ul>
+			    <li id="ww" href="https://github.com/Jonontop/jonontop.github.io">
+			        <a>Personal Website</a>
+			        <p>This website showcases personal projects and information about the creator.</p>
+			    </li>
+			    <li href="https://github.com/bojanontop/bojanontop.github.io">
+			        <a>Geoid d.o.o. <br />website</a>
+			        <p>The website serves as an online platform for the company Geoid d.o.o., providing information about its services and offerings.</p>
+			    </li>
+			    <li href="">
+			        <a>Python <br />Terminal Game</a>
+			        <p>This Python terminal game features four rooms and two objects to find, offering an interactive gaming experience.</p>
+			    </li>
+			    <li id="ww" href="">
+			        <a >Batch Game <br /></a>
+			        <p>The batch game designed for Windows CMD features four rooms and two objects to find, providing entertainment within the command prompt environment.</p>
+			    </li>
+			    <li href="">
+			        <a>Youtube <br />Video Downloader</a>
+			        <p>This YouTube video downloader, created with Python, Pytube, and Tkinter, allows users to download both audio and video content from the platform.</p>
+			    </li>
+			    <li href="https://google-bot.xyz/">
+			        <a>Google-Bot Website</a>
+			        <p>The Google-Bot website serves as a platform for the Discord bot Google-Bot, offering information and resources related to its functionalities and usage.</p>
+			    </li>
+			</ul>
+
 		</div>
 
 		<!-- CV 
@@ -168,10 +229,7 @@
     <div class="cv" id="cv">
         <h2>MY CV:</h2>
         <embed src="Življenjepis .pdf" width="40%" height="400px" />
-    </div>
-
--->
-
+    </div> -->
 		<!-- Contanct -->
 		<div class="contact" id="contact">
 			<h1>Contact me!</h1>
