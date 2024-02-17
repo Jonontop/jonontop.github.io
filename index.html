@@ -70,7 +70,6 @@
 
 			gtag("config", "G-DT0Y9BCPLQ");
 		</script>
-		<script src="/path/to/typeit/source"></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
@@ -90,11 +89,18 @@
 			</nav>
 			<nav class="Mobile">
 				<i
-					class="fa-solid fa-bars fa-lg icon"
+					class="fa-solid fa-bars fa-xl icon"
 					id="icon"
 					style="color: white; padding-bottom: 10px"
 					onclick="menu()"></i>
+					
 				<ul id="items">
+					<i 
+						class="fa-solid fa-bars-staggered items-icon"
+						id="items-icon"
+						onclick="menu()"
+						
+						></i>
 					<li id="item"><a href="#contact">Contact</a></li>
 					<li id="item"><a href="#Main">About</a></li>
 					<li id="item"><a href="#exp">Experience</a></li>
@@ -106,7 +112,19 @@
 
 		<script>
 			function menu() {
-				document.getElementById("items").style.display = "grid";
+				var item = document.getElementById("items");
+
+				if (item.style.display === "" || item.style.display === "none") {
+					item.style.display = "grid";
+					item.classList.add("slide1");
+					item.classList.remove("slide2");
+				} else {
+					item.classList.remove("slide1");
+					item.classList.add("slide2");
+					setTimeout(function () {
+						item.style.display = "none";
+					}, 375);
+				}
 			}
 		</script>
 		<!-- Main -->
