@@ -229,12 +229,12 @@ body {
 
 .exp {
     margin-top: 200px;
-    height: 1000px;
+    height: 60em;
 }
 
 .exp h2 {
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     text-align: center;
     font-size: 35px;
 }
@@ -283,6 +283,7 @@ body {
 .projects h1 {
     color: white;
     text-align: center;
+    margin-bottom: 3em;
 }
 
 .projects ul {
@@ -294,8 +295,7 @@ body {
     flex-direction: column;
     padding: 20px;
     margin: 20px;
-    background-color: #585c5f;
-    border: 1px solid #585c5f;
+    background-color: #3b424823;
     border-radius: 10px
 }
 
@@ -319,6 +319,7 @@ body {
     text-decoration: none;
     transition: all ease .3s;
     display: none;
+    width: 50%;
 }
 
 .projects ul li:hover {
@@ -343,7 +344,8 @@ body {
 
 .contact {
     text-align: center;
-    max-width: 400px;
+    max-width: 600px;
+    height: 800px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -353,16 +355,17 @@ body {
 }
 
 .contact h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 50px;
     color: white;
 }
 
 .contact label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 35px 0 10px;
     text-align: left;
     color: white;
+    font-size: 1.5em;
 }
 
 .contact input[type="text"],
@@ -376,16 +379,16 @@ body {
 }
 
 .contact input[type="submit"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     background-color: #FC6D6D;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 25px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 45px;
+    margin-top: 5.3em;
 }
 
 .contact input[type="submit"]:hover {
@@ -472,6 +475,10 @@ footer a{
 
 
 @media only screen and (max-width: 1200px) {
+    .exp{
+        height: 70em;
+    }
+
     .flex-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, 1fr);
@@ -482,6 +489,7 @@ footer a{
         height: 200px;
         line-height: 200px;
         font-size: 2.5vw;
+        margin-bottom: 2em;
     }
 
     .summary {
@@ -577,6 +585,9 @@ footer a{
     .dynamic-txts {
         margin-left: 0em;
     }
+    .exp{
+        height: 100em;
+    }
 
     .exp h2 {
         font-size: 2.5em;
@@ -585,9 +596,11 @@ footer a{
 
     .flex-box {
         width: 95%;
-        font-size: 5vw;
+        font-size: 4.5vw;
         margin-left: 0vw;
         margin-right: 0vw;
+        margin-bottom: 0;
+        height: 90%;
     }
 
     .contact {
@@ -598,6 +611,9 @@ footer a{
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-bottom: 5vw;
+        height: 750px;
+        margin-top: 10em;
+        margin-bottom: 10em;
     }
 
     .contact input[type="text"],
@@ -620,7 +636,7 @@ footer a{
         font-size: 18px;
         cursor: pointer;
         transition: background-color 0.3s;
-        margin-top: 45px;
+        margin-top: 4.7em;
     }
 
     .contact input[type="submit"]:hover {
