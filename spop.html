@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Question</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #question {
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="question"></div>
+
+    <script>
+        const questions = [
+            "Programsko opremo delimo v dve skupini. Kateri?",
+            "Kaj vsebuje uporabniška programska oprema?",
+            "Kaj vključuje sistemska programska oprema?",
+            "Katere so ključne naloge sodobnega operacijskega sistema?",
+            "Kako vidimo vse aktivne in skrite procese?",
+            "Kaj je naloga datotečnega sistema?",
+            "Kako so organizirani podatki v datotečnem sistemu?",
+            "Katere so najpogostejše operacije z datotekami?",
+            "Naštejte temeljne datotečne sisteme Windows, Ubuntu, OS X.",
+            "Kaj pomeni pojem defragmentacija diska?",
+            "Kaj pomeni pojem particioniranje?",
+            "Kaj so prednosti particioniranja?",
+            "Kakšna je razlika med primarno in razširjeno particijo?",
+            "Kriteriji izbire ustreznega operacijskega sistema?",
+            "Zakaj je pomembno posodabljanje operacijskega sistema?",
+            "Zakaj je potreben gonilnik naprave?",
+            "Kako deluje gonilnik?",
+            "Kaj je navidezni gonilnik?",
+            "Kaj je generični gonilnik? Katere so njegove omejitve?",
+            "Kakšna je razlika med podpisanim in nepodpisanim gonilnikom?",
+            "Zakaj moramo ustvariti varnostne kopije?",
+            "Naštej možne vzroke za izgubo podatkov.",
+            "Kakšna je razlika med kopiranjem podatkov in kopiranjem celotnega diska?",
+            "Katere medije za shranjevanje varnostnih kopij poznamo?",
+            "Kaj nam ponuja možnost shranjevanja podatkov v oblake?",
+            "Katere so ključne prednosti tovrstnega shranjevanja?",
+            "Katera so tveganja ali slabosti uporabe shranjevanja podatkov v oblake?",
+            "Katere vrste varnostnega kopiranja poznamo?",
+            "Pojasnite, kako v različnih okoljih upravljamo z uporabniškimi pravicami.",
+            "Kakšna je razlika med uporabnikom in skrbnikom sistema?",
+            "Kakšno nalogo ima ukaz sudo v okolju Ubuntu?",
+            "Kako lahko v sistem namestimo novo pisavo?",
+            "Naštejte nekaj možnosti prilagajanja uporabniškega vmesnika posameznemu uporabniku glede na izbrani operacijski sistem."
+        ];
+
+        function getRandomQuestion() {
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            return questions[randomIndex];
+        }
+
+        document.getElementById('question').innerText = getRandomQuestion();
+    </script>
+</body>
+</html>
