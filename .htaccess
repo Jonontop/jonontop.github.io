@@ -1,3 +1,5 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^jonpecar.me$
 RewriteRule ^(.*)$ https://www.jonpecar.me/$1 [R=301,L]
+
+ErrorDocument 404 https://jonpecar.me
