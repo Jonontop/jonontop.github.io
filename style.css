@@ -496,6 +496,10 @@ footer a{
         margin-left: 10%;
         margin-right: 10%;
     }
+    .main-footer{
+        display: block;
+    }
+    
 
 }
 
@@ -668,7 +672,14 @@ footer a{
         width: 50%;
     }
 
-    footer .div1 {
-        
+    .div1 h1{
+        font-size: 1.4em;
+    }
+    .div2 h1{
+        font-size: 1.4em;
+    }
+
+    .div-item{
+        font-size: 0.6em;
     }
 }
