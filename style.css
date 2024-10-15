@@ -668,7 +668,7 @@ footer a{
         width: 50%;
     }
 
-    footer .div1 {
-        
+    footer {
+        display: none;
     }
 }
