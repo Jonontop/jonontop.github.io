@@ -3,32 +3,32 @@
 <head>
     <title>Omrežna vprašanja in odgovori</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 8em;
-            margin-top: 2em;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 1.5em;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        p {
-            color: #333;
-            font-size: 1.7em;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    h1 {
+        color: #333;
+        margin-bottom: 8em;
+        margin-top: 2em;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 1.5em;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    p {
+        color: #333;
+        font-size: 1.7em;
+    }
     </style>
     <script>
         let questionsAndAnswers = [
@@ -134,17 +134,25 @@
             }
         ];
 
-        function novoVprasanjeInOdgovor() {
+        let currentAnswer = "";
+
+        function novoVprasanje() {
             let randomIndex = Math.floor(Math.random() * questionsAndAnswers.length);
             document.getElementById("vprasanje").innerText = questionsAndAnswers[randomIndex].question;
-            document.getElementById("odgovor").innerText = questionsAndAnswers[randomIndex].answer;
+            currentAnswer = questionsAndAnswers[randomIndex].answer;
+            document.getElementById("odgovor").innerText = "Odgovor je skrit. Kliknite gumb za prikaz.";
+        }
+
+        function prikaziOdgovor() {
+            document.getElementById("odgovor").innerText = currentAnswer;
         }
     </script>
 </head>
 <body>
     <h1>Omrežna vprašanja in odgovori</h1>
     <p id="vprasanje">Pritisni NOVO za novo vprašanje.</p>
-    <p id="odgovor">Tukaj bo prikazan odgovor.</p>
-    <button onclick="novoVprasanjeInOdgovor()">NOVO</button>
+    <p id="odgovor">Odgovor je skrit. Kliknite gumb za prikaz.</p>
+    <button onclick="novoVprasanje()">NOVO</button>
+    <button onclick="prikaziOdgovor()">Prikaži odgovor</button>
 </body>
 </html>
