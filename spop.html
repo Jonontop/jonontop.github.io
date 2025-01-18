@@ -7,6 +7,7 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -20,11 +21,18 @@
             border: 1px solid #ccc;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div id="question"></div>
+    <button onclick="displayNewQuestion()">Novo vprašanje</button>
 
     <script>
         const questions = [
@@ -68,7 +76,12 @@
             return questions[randomIndex];
         }
 
-        document.getElementById('question').innerText = getRandomQuestion();
+        function displayNewQuestion() {
+            document.getElementById('question').innerText = getRandomQuestion();
+        }
+
+        // Izpiši prvo vprašanje ob nalaganju strani
+        displayNewQuestion();
     </script>
 </body>
 </html>
