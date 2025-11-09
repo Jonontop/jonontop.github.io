@@ -73,16 +73,17 @@
 
         <nav class="space-x-10 hidden md:flex" aria-label="Main navigation">
             <a href="#home" class="text-orange-500" aria-label="Go to Home section">Home</a>
-            <a href="#services" class="hover:text-orange-500" aria-label="Go to Services section">Services</a>
-            <a href="#about" class="hover:text-orange-500" aria-label="Go to About section">About me</a>
             <a href="#portfolio" class="hover:text-orange-500" aria-label="Go to Portfolio section">Portfolio</a>
+            <a href="#about" class="hover:text-orange-500" aria-label="Go to About section">About me</a>
+            <!--<a href="#projects" class="hover:text-orange-500" aria-label="Go to Services section">Contact Me</a>-->
+            
         </nav>
 
         <a href="#contact" class="bg-orange-500 px-4 py-2 rounded hover:bg-orange-600 hidden md:inline-block" aria-label="Go to Contact section">Contact Me</a>
     </header>
 
 <!-- Hero Section -->
-    <section class="flex flex-col-reverse md:flex-row items-center justify-center md:justify-center px-8 md:px-20 mt-30 mx-auto max-w-6xl" aria-labelledby="hero-heading">
+    <section id="home" class="flex flex-col-reverse md:flex-row items-center justify-center md:justify-center px-8 md:px-20 mt-30 mx-auto max-w-6xl" aria-labelledby="hero-heading">
     
     <!-- Text -->
     <div class="md:w-1/2 space-y-4 right-full">
@@ -91,17 +92,17 @@
       <h2 class="text-3xl md:text-4xl font-bold text-orange-500">FullStack Developer</h2>
 
       <!-- Social Links -->
-      <div class="flex space-x-4 mt-4">
+      <!--<div class="flex space-x-4 mt-4">
         <a href="#" class="text-gray-400 hover:text-white text-xl">IG</a>
         <a href="#" class="text-gray-400 hover:text-white text-xl">LinkedIn</a>
-        <a href="#" class="text-gray-400 hover:text-white text-xl">Dribbble</a>
+        <a href="#" class="text-gray-400 hover:text-white text-xl">Facebook</a>
         <a href="#" class="text-gray-400 hover:text-white text-xl">Behance</a>
-      </div>
+      </div>-->
 
       <!-- Buttons -->
       <div class="mt-6 space-x-4">
-        <a href="#hire" class="bg-orange-500 px-6 py-3 rounded hover:bg-orange-600">Contact Me</a>
-        <a href="#cv" class="border border-gray-400 px-6 py-3 rounded hover:border-orange-500">Download CV</a>
+        <a href="#contact" class="bg-orange-500 px-6 py-3 rounded hover:bg-orange-600">Contact Me</a>
+        <a href="./19102025.pdf" class="border border-gray-400 px-6 py-3 rounded hover:border-orange-500" target="_blank">Download CV</a>
       </div>
 
       <!-- Stats -->
@@ -134,7 +135,7 @@
       <div class="max-w-6xl mx-auto px-8">
         <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
         <p class="text-gray-400 leading-relaxed text-center max-w-3xl mx-auto text-lg">
-          I am a passionate <span class="text-gray-300 font-bold">FullStack Developer</span> with over 5 years of experience in building dynamic and responsive web applications. My expertise lies in both <span class="text-gray-300 font-bold">front-end</span> and <span class="text-gray-300 font-bold">back-end</span> development, allowing me to create seamless <span class="text-gray-300 font-bold">user experiences</span>. I am dedicated to delivering <span class="text-gray-300 font-bold">high-quality</span> code and continuously improving my skills to stay updated with the latest industry trends.
+          I am a passionate <span class="font-bold" style="color: #F4FF7D;">FullStack Developer</span> with over 5 years of experience in building dynamic and responsive web applications. My expertise lies in both <span class="text-gray-300 font-bold">front-end</span> and <span class="text-gray-300 font-bold">back-end</span> development, allowing me to create seamless <span class="text-gray-300 font-bold">user experiences</span>. I am dedicated to delivering <span class="text-gray-300 font-bold">high-quality</span> code and continuously improving my skills to stay updated with the latest industry trends.
         </p>
       </div>
     </section>
@@ -181,7 +182,7 @@
                 <p class="text-light-gray mb-4">Clean, modern portfolio showcasing projects and development skills.</p>
                 <div class="flex justify-between items-center">
                     <span class="inline-block text-accent-gray px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #0096FF;">HTML</span>
-                    <a href="#" class="text-accent-gray font-semibold hover:text-white transition-colors">View Details →</a>
+                    <a href="https://github.com/Jonontop/jonontop.github.io" class="text-accent-gray font-semibold hover:text-white transition-colors">View Details →</a>
                 </div>
             </div>
             
@@ -207,7 +208,7 @@
                 <p class="text-light-gray mb-4">Music streaming bot with playlist management and voice channel support.</p>
                 <div class="flex justify-between items-center">
                     <span class="inline-block text-accent-gray px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #0096FF;">Python</span>
-                    <a href="#" class="text-accent-gray font-semibold hover:text-white transition-colors">View Details →</a>
+                    <a href="https://github.com/Jonontop/Radio-Veseljak-Discord-Bot" class="text-accent-gray font-semibold hover:text-white transition-colors">View Details →</a>
                 </div>
             </div>
             
@@ -220,7 +221,7 @@
                 <p class="text-light-gray mb-4">Python library for food delivery API integration and order management.</p>
                 <div class="flex justify-between items-center">
                     <span class="inline-block text-accent-gray px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #0096FF;">Python</span>
-                    <a href="#" class="text-accent-gray font-semibold hover:text-white transition-colors">View Details →</a>
+                    <a href="https://github.com/Jonontop/kroky-library" class="text-accent-gray font-semibold hover:text-white transition-colors">View Details →</a>
                 </div>
             </div>
         </div>
@@ -235,7 +236,7 @@
 
 
     <!-- Contact Form Section -->
-    <section class="py-16 border-t border-gray-800">
+    <section class="py-16 border-t border-gray-800" id="contact" aria-labelledby="contact-heading">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-2">Get In Touch</h2>
             <p class="text-center text-accent-gray mb-12 max-w-2xl mx-auto">Have a <span style="color: #0096FF;" class="font-bold">project</span> in mind or want to <span class="font-bold" style="color: #0096FF;">collaborate</span>? Send me a message and I'll get back to you as soon as possible.</p>
@@ -278,16 +279,16 @@
                     <h3 class="text-xl font-bold mb-4">About This Page</h3>
                     <p class="text-light-gray mb-4">Full-stack developer with expertise in web development, IoT systems, and Python applications. Passionate about creating efficient and user-friendly solutions.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-accent-gray hover:text-white transition-colors">
+                        <a href="https://github.com/Jonontop" class="text-accent-gray hover:text-white transition-colors">
                             <i class="fab fa-github text-2xl"></i>
                         </a>
-                        <a href="#" class="text-accent-gray hover:text-white transition-colors">
+                        <a href="https://www.linkedin.com/in/jon-pe%C4%8Dar-an%C5%BEelak-79772a218/" class="text-accent-gray hover:text-white transition-colors">
                             <i class="fab fa-linkedin text-2xl"></i>
                         </a>
-                        <a href="#" class="text-accent-gray hover:text-white transition-colors">
+                        <!--<a href="#" class="text-accent-gray hover:text-white transition-colors">
                             <i class="fab fa-twitter text-2xl"></i>
-                        </a>
-                        <a href="#" class="text-accent-gray hover:text-white transition-colors">
+                        </a>-->
+                        <a href="ninjacof" class="text-accent-gray hover:text-white transition-colors">
                             <i class="fab fa-discord text-2xl"></i>
                         </a>
                     </div>
@@ -296,10 +297,10 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-light-gray hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#" class="text-light-gray hover:text-white transition-colors">Projects</a></li>
-                        <li><a href="#" class="text-light-gray hover:text-white transition-colors">About</a></li>
-                        <li><a href="#" class="text-light-gray hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#home" class="text-light-gray hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#portfolio" class="text-light-gray hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#about" class="text-light-gray hover:text-white transition-colors">About</a></li>
+                        <li><a href="#contact" class="text-light-gray hover:text-white transition-colors">Contact</a></li>
                     </ul>
                 </div>
                 
