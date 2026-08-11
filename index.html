@@ -28,6 +28,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Zamenjajte s svojim EmailJS javnim ključem (Public Key)
+            emailjs.init("U4qb5X-zwPgeP7kEJ");
+        })();
+    </script>
+
     <style>
         body {
             background-color: #0b0f19;
@@ -328,6 +337,30 @@
             </form>
         </div>
     </section>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const templateParams = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Send the form data using EmailJS
+            emailjs.sendForm('service_p0urtje', 'template_c1ao7na', this)
+                .then(function(response) {
+                    //alert('Message sent successfully! Thank you for reaching out.');
+                    document.getElementById('contactForm').reset(); // Reset the form
+                }, function(error) {
+                    //alert('Failed to send message. Please try again later.');
+                });
+            
+        });
+
+    </script>
 
     <footer class="border-t border-slate-900 bg-slate-950 py-16">
         <div class="mx-auto max-w-6xl px-6">
